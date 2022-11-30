@@ -25,11 +25,13 @@ app.get('/foods', function (req, res) {
 app.get('/drinks', function (req, res) {
   res.json({
     response: [{
-      food: 'cerveza'
+      drink: 'cerveza'
     }, {
-      food: 'mojito'
+      drink: 'mojito'
     }, {
-      food: 'monster'
+      drink: 'monster'
+    }, {
+      drink: 'vodka'
     }]
   })
 })
