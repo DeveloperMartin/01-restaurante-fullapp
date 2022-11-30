@@ -16,6 +16,8 @@ jobs:
   steps:
    - uses: actions/checkout@v2
    
-   - name: escribir en consola
+   - name: build backend
+     working-directory: backend
      run: |
-        echo "hola como estas?"
+       npm install
+       npm run start
